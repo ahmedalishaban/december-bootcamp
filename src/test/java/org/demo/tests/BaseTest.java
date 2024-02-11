@@ -22,6 +22,7 @@ public class BaseTest {
         driver = new EdgeDriver();
         basePage = new BasePage();
         homePage = new HomePage();
+        registrationPage = new RegistrationPage();
         basePage.setDriver(driver);
         driver.manage().window().maximize();
         driver.get("https://demo.nopcommerce.com/");

@@ -17,4 +17,12 @@ public class BasePage {
         return driver.findElement(locator);
     }
 
+    public void click(By locator){
+        find(locator).click();
+    }
+
+    public void send(By locator, String text){
+        find(locator).sendKeys(text);
+    }
+
 }

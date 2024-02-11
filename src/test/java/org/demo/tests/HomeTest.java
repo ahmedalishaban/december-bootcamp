@@ -13,4 +13,17 @@ public class HomeTest extends BaseTest{
         Assert.assertEquals(actualCurrentURL,"https://demo.nopcommerce.com/register?returnUrl=%2F","Check Register Button");
     }
 
+    @Test
+    public void verifyEuroText(){
+        //Navigate to the website
+
+        //Locate the element
+        //Select Euro Option
+        homePage.selectEuroCurrency();
+        //Assert actual text and expected text
+        String actualText = homePage.getEuroText();
+        Assert.assertTrue(actualText.contains("ro"));
+
+    }
+
 }
